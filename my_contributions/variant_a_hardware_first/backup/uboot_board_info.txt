@@ -1,0 +1,69 @@
+# U-Boot Board Information
+# Extracted: 2025-11-06 03:05:58
+# Device: HY300 (sun50iw12)
+# U-Boot Version: 2018.05-00027-ge159793
+
+## Version Information
+
+```
+U-Boot 2018.05-00027-ge159793 (Aug 15 2025 - 10:07:31 +0000) Allwinner Technology
+
+Compiler:
+- arm-linux-gnueabi-gcc (Linaro GCC 7.2-2017.11) 7.2.1 20171011
+- GNU ld (Linaro_Binutils-2017.11) 2.28.2.20170706
+```
+
+## Board Info (bdinfo)
+
+```
+arch_number = 0x00000000
+boot_params = 0x40000100
+DRAM bank   = 0x00000000
+-> start    = 0x40000000
+-> size     = 0x40000000 (1 GiB)
+baudrate    = 115200 bps
+TLB addr    = 0x7FFF0000
+relocaddr   = 0x7FF0E000
+reloc off   = 0x35F0E000
+irq_sp      = 0x77E8DE60
+sp start    = 0x77E8BE50
+fdt_blob    = 0x77e8de70
+```
+
+## MMC Device Information
+
+**MMC Device:** mmc2 (eMMC)
+
+```
+Device: SUNXI SD/MMC
+Manufacturer ID: 15
+OEM: 100
+Name: 8GME4 
+Bus Speed: 50000000 Hz (50 MHz)
+Mode: MMC legacy
+Read Block Length: 512 bytes
+MMC version: 5.1
+High Capacity: Yes
+Capacity: 7.3 GiB
+Bus Width: 8-bit DDR
+Erase Group Size: 512 KiB
+HC WP Group Size: 8 MiB
+User Capacity: 7.3 GiB WRREL
+Boot Capacity: 4 MiB ENH
+RPMB Capacity: 512 KiB ENH
+```
+
+## Memory Layout (from bdinfo)
+
+- **DRAM Start:** 0x40000000
+- **DRAM Size:** 0x40000000 (1 GiB)
+- **TLB Address:** 0x7FFF0000
+- **U-Boot Relocated Address:** 0x7FF0E000
+- **FDT (Device Tree) Address:** 0x77e8de70
+- **Stack Pointer Start:** 0x77E8BE50
+
+## Serial Communication
+
+- **Baud Rate:** 115200 bps
+- **Serial Interface:** UART
+- **Configuration:** 8N1 (8 data bits, no parity, 1 stop bit)

@@ -1,0 +1,166 @@
+# U-Boot Environment Variables
+# Extracted: 2025-11-06 03:05:58
+# Device: HY300 (sun50iw12)
+# U-Boot Version: 2018.05-00027-ge159793 (Aug 15 2025 - 10:07:31 +0000)
+
+## All Environment Variables (from printenv)
+
+BOOTMODE=standby
+CEC_ENABLE=1
+CEC_WAKUP_ENABLE=1
+ColorDepth=8
+MEM_MODE=direct
+Mapping=0
+MirrorMode=0
+OddEven=0
+Orignal_MirrorMode=0
+PanelAspectRatio=1
+PanelDCKLCurrent=7
+PanelDCLK=62000000
+PanelDECurrent=47
+PanelDualPort=0
+PanelEvenDataCurrent=7
+PanelHBP=40
+PanelHTotal=1360
+PanelHeight=720
+PanelHsync=20
+PanelHsyncPol=0
+PanelInvDCLK=1
+PanelInvDE=0
+PanelInvHSync=0
+PanelInvVSync=0
+PanelMaxHTotal=1360
+PanelMaxVTotal=760
+PanelMinHTotal=1360
+PanelMinVTotal=760
+PanelNoiseDith=1
+PanelODDDataCurrent=7
+PanelOffTiming0=20
+PanelOffTiming1=250
+PanelOffTiming2=75
+PanelOnTiming0=20
+PanelOnTiming1=550
+PanelOnTiming2=75
+PanelTimingWorkMode=2
+PanelVBP=20
+PanelVTotal=760
+PanelVsync=2
+PanelVsyncPol=0
+PanelWidth=1280
+PrimaryBx=1566
+PrimaryBy=381
+PrimaryGamma=22000
+PrimaryGx=3000
+PrimaryGy=6068
+PrimaryRx=6180
+PrimaryRy=3238
+PrimaryTMax=3199000
+PrimaryTMin=1228
+PrimaryWx=3127
+PrimaryWy=3290
+ProjectID=52
+SpreadSpectrumEnable=0
+SpreadSpectrumSpan=0
+SpreadSpectrumStep=10
+ab_partition_list=bootloader,env,boot,vendor_boot,dtbo,vbmeta,vbmeta_system,vbmeta_vendor,Reserve0
+boot_fastboot=fastboot
+boot_normal=sunxi_flash read 45000000 boot;bootm 45000000
+boot_recovery=sunxi_flash read 45000000 recovery;bootm 45000000
+bootcmd=run setargs_mmc boot_normal
+bootdelay=1
+cma=24M
+console=ttyS0,115200
+default_backlight=50
+dynamic_backlight=0
+earlyprintk=sunxi-uart,0x02500000
+fdtcontroladdr=77ebde70
+fileaddr=77f3d000
+filesize=4398
+force_normal_boot=1
+init=/init
+initcall_debug=0
+keybox_list=widevine,ec_key,ec_cert1,ec_cert2,ec_cert3,rsa_key,rsa_cert1,rsa_cert2,rsa_cert3,hdcpkey
+loglevel=4
+mmc_root=/dev/mmcblk0p5
+nand_root=/dev/nand0p5
+panel_config=panel_config.ini
+partitions=bootloader_a@mmcblk0p1:bootloader_b@mmcblk0p2:env_a@mmcblk0p3:env_b@mmcblk0p4:boot_a@mmcblk0p5:boot_b@mmcblk0p6:vendor_boot_a@mmcblk0p7:vendor_boot_b@mmcblk0p8:super@mmcblk0p9:misc@mmcblk0p10:vbmeta_a@mmcblk0p11:vbmeta_b@mmcblk0p12:vbmeta_system_a@mmcblk0p13:vbmeta_system_b@mmcblk0p14:vbmeta_vendor_a@mmcblk0p15:vbmeta_vendor_b@mmcblk0p16:frp@mmcblk0p17:empty@mmcblk0p18:metadata@mmcblk0p19:private@mmcblk0p20:dtbo_a@mmcblk0p21:dtbo_b@mmcblk0p22:media_data@mmcblk0p23:Reserve0_a@mmcblk0p24:Reserve0_b@mmcblk0p25:UDISK@mmcblk0p26
+prj_mode=prj_mode=0
+pwm_channel=5
+pwm_freq=40000
+pwm_max=100
+pwm_min=1
+pwm_polarity=1
+pwm_vs_lock=1
+setargs_mmc=setenv  bootargs earlyprintk=${earlyprintk} clk_ignore_unused initcall_debug=${initcall_debug} console=${console} loglevel=${loglevel} root=${mmc_root}  init=${init} cma=${cma} snum=${snum} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} specialstr=${specialstr} gpt=1 androidboot.force_normal_boot=${force_normal_boot} androidboot.slot_suffix=${slot_suffix} panel_config=${panel_config} slub_min_objects=${slub_min_objects}
+setargs_nand=setenv bootargs earlyprintk=${earlyprintk} clk_ignore_unused initcall_debug=${initcall_debug} console=${console} loglevel=${loglevel} root=${nand_root} init=${init} cma=${cma} snum=${snum} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} specialstr=${specialstr} gpt=1 androidboot.force_normal_boot=${force_normal_boot} androidboot.slot_suffix=${slot_suffix} panel_config=${panel_config}
+slot_suffix=_a
+slub_min_objects=4
+snum=HYTY22507211231
+trace_buf_size=64M
+trace_enable=0
+trace_event=sched_wakeup,sched_switch,sched_blocked_reason,sched_cpu_hotplug,block,ext4
+uboot_fdt_addr=77ebde70
+
+Environment size: 3533/131068 bytes
+
+## Critical Boot Variables
+
+- **bootcmd:** `run setargs_mmc boot_normal` - Boots from MMC (eMMC)
+- **bootdelay:** 1 second - Short timeout before auto-boot
+- **boot_normal:** `sunxi_flash read 45000000 boot;bootm 45000000` - Factory boot sequence
+- **boot_recovery:** `sunxi_flash read 45000000 recovery;bootm 45000000` - Recovery mode
+- **boot_fastboot:** `fastboot` - Fastboot mode
+
+## Display Configuration Variables
+
+Panel dimensions: 1280x720 (configured for HDMI output)
+- Frame rate timing: 1360x760 total (40px HBP, 20px VBP)
+- DCLK frequency: 62000000 Hz (62 MHz)
+- Various synchronization and polarity settings for LCD/HDMI output
+
+## Partition Configuration
+
+AB Partition List: bootloader, env, boot, vendor_boot, dtbo, vbmeta, vbmeta_system, vbmeta_vendor, Reserve0
+
+26 eMMC partitions configured (A/B redundancy for critical system partitions):
+- bootloader_a/b (mmcblk0p1-2)
+- env_a/b (mmcblk0p3-4)  
+- boot_a/b (mmcblk0p5-6)
+- vendor_boot_a/b (mmcblk0p7-8)
+- super (mmcblk0p9) - System partition
+- misc (mmcblk0p10)
+- vbmeta_a/b (mmcblk0p11-12)
+- vbmeta_system_a/b (mmcblk0p13-14)
+- vbmeta_vendor_a/b (mmcblk0p15-16)
+- frp (mmcblk0p17) - Factory Reset Protection
+- empty (mmcblk0p18)
+- metadata (mmcblk0p19)
+- private (mmcblk0p20)
+- dtbo_a/b (mmcblk0p21-22) - Device tree overlays
+- media_data (mmcblk0p23)
+- Reserve0_a/b (mmcblk0p24-25)
+- UDISK (mmcblk0p26) - User accessible storage
+
+## Boot Arguments (for setargs_mmc)
+
+```
+earlyprintk=sunxi-uart,0x02500000
+clk_ignore_unused
+console=ttyS0,115200
+loglevel=4
+root=/dev/mmcblk0p5
+init=/init
+cma=24M
+gpt=1
+androidboot.force_normal_boot=1
+androidboot.slot_suffix=_a
+panel_config=panel_config.ini
+```
+
+## Device Serial Info
+
+- Serial Number (snum): HYTY22507211231
+- Panel Config File: panel_config.ini
+- Force Normal Boot: Enabled (1)
+- Slot Suffix: _a (A/B boot configuration)

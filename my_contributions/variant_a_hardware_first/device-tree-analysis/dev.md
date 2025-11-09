@@ -1,0 +1,736 @@
+# Directory: dev
+
+This file contains the complete directory tree for `/dev` extracted from the HY300 device.
+
+**Generated:** 2025-11-08  
+**Source:** `FullDir.xml`  
+**Items:** 390 files, 56 subdirectories  
+**Type:** Directory
+
+---
+
+## Tree Structure
+
+```
+├── dev/ (drwxr-xr-x)
+  ├── __properties__/ (drwx--x--x)
+    ├── properties_serial
+    ├── property_info
+    ├── u:object_r:adbd_prop:s0
+    ├── u:object_r:apexd_prop:s0
+    ├── u:object_r:apk_verity_prop:s0
+    ├── u:object_r:audio_prop:s0
+    ├── u:object_r:binder_cache_bluetooth_server_prop:s0
+    ├── u:object_r:binder_cache_system_server_prop:s0
+    ├── u:object_r:binder_cache_telephony_server_prop:s0
+    ├── u:object_r:bluetooth_a2dp_offload_prop:s0
+    ├── u:object_r:bluetooth_audio_hal_prop:s0
+    ├── u:object_r:bluetooth_prop:s0
+    ├── u:object_r:bootloader_boot_reason_prop:s0
+    ├── u:object_r:boottime_prop:s0
+    ├── u:object_r:boottime_public_prop:s0
+    ├── u:object_r:bpf_progs_loaded_prop:s0
+    ├── u:object_r:bq_config_prop:s0
+    ├── u:object_r:charger_prop:s0
+    ├── u:object_r:cold_boot_done_prop:s0
+    ├── u:object_r:config_prop:s0
+    ├── u:object_r:cppreopt_prop:s0
+    ├── u:object_r:cpu_variant_prop:s0
+    ├── u:object_r:ctl_adbd_prop:s0
+    ├── u:object_r:ctl_apexd_prop:s0
+    ├── u:object_r:ctl_bootanim_prop:s0
+    ├── u:object_r:ctl_bugreport_prop:s0
+    ├── u:object_r:ctl_console_prop:s0
+    ├── u:object_r:ctl_default_prop:s0
+    ├── u:object_r:ctl_dumpstate_prop:s0
+    ├── u:object_r:ctl_fuse_prop:s0
+    ├── u:object_r:ctl_gsid_prop:s0
+    ├── u:object_r:ctl_interface_restart_prop:s0
+    ├── u:object_r:ctl_interface_start_prop:s0
+    ├── u:object_r:ctl_interface_stop_prop:s0
+    ├── u:object_r:ctl_mdnsd_prop:s0
+    ├── u:object_r:ctl_restart_prop:s0
+    ├── u:object_r:ctl_rildaemon_prop:s0
+    ├── u:object_r:ctl_sigstop_prop:s0
+    ├── u:object_r:ctl_start_prop:s0
+    ├── u:object_r:ctl_stop_prop:s0
+    ├── u:object_r:dalvik_prop:s0
+    ├── u:object_r:debug_prop:s0
+    ├── u:object_r:debuggerd_prop:s0
+    ├── u:object_r:default_prop:s0
+    ├── u:object_r:device_config_activity_manager_native_boot_prop:s0
+    ├── u:object_r:device_config_boot_count_prop:s0
+    ├── u:object_r:device_config_configuration_prop:s0
+    ├── u:object_r:device_config_input_native_boot_prop:s0
+    ├── u:object_r:device_config_media_native_prop:s0
+    ├── u:object_r:device_config_netd_native_prop:s0
+    ├── u:object_r:device_config_reset_performed_prop:s0
+    ├── u:object_r:device_config_runtime_native_boot_prop:s0
+    ├── u:object_r:device_config_runtime_native_prop:s0
+    ├── u:object_r:device_config_storage_native_boot_prop:s0
+    ├── u:object_r:device_config_sys_traced_prop:s0
+    ├── u:object_r:device_config_window_manager_native_boot_prop:s0
+    ├── u:object_r:device_logging_prop:s0
+    ├── u:object_r:dhcp_prop:s0
+    ├── u:object_r:disp_prop:s0
+    ├── u:object_r:dumpstate_options_prop:s0
+    ├── u:object_r:dumpstate_prop:s0
+    ├── u:object_r:dynamic_system_prop:s0
+    ├── u:object_r:exported2_config_prop:s0
+    ├── u:object_r:exported2_default_prop:s0
+    ├── u:object_r:exported2_radio_prop:s0
+    ├── u:object_r:exported2_system_prop:s0
+    ├── u:object_r:exported2_vold_prop:s0
+    ├── u:object_r:exported3_default_prop:s0
+    ├── u:object_r:exported3_radio_prop:s0
+    ├── u:object_r:exported3_system_prop:s0
+    ├── u:object_r:exported_audio_prop:s0
+    ├── u:object_r:exported_bluetooth_prop:s0
+    ├── u:object_r:exported_camera_prop:s0
+    ├── u:object_r:exported_config_prop:s0
+    ├── u:object_r:exported_dalvik_prop:s0
+    ├── u:object_r:exported_default_prop:s0
+    ├── u:object_r:exported_dumpstate_prop:s0
+    ├── u:object_r:exported_ffs_prop:s0
+    ├── u:object_r:exported_fingerprint_prop:s0
+    ├── u:object_r:exported_overlay_prop:s0
+    ├── u:object_r:exported_pm_prop:s0
+    ├── u:object_r:exported_radio_prop:s0
+    ├── u:object_r:exported_secure_prop:s0
+    ├── u:object_r:exported_system_prop:s0
+    ├── u:object_r:exported_system_radio_prop:s0
+    ├── u:object_r:exported_vold_prop:s0
+    ├── u:object_r:exported_wifi_prop:s0
+    ├── u:object_r:fastbootd_protocol_prop:s0
+    ├── u:object_r:ffs_prop:s0
+    ├── u:object_r:fingerprint_prop:s0
+    ├── u:object_r:firstboot_prop:s0
+    ├── u:object_r:graphics_config_prop:s0
+    ├── u:object_r:gsid_prop:s0
+    ├── u:object_r:heapprofd_enabled_prop:s0
+    ├── u:object_r:heapprofd_prop:s0
+    ├── u:object_r:hwservicemanager_prop:s0
+    ├── u:object_r:incremental_prop:s0
+    ├── u:object_r:init_perf_lsm_hooks_prop:s0
+    ├── u:object_r:init_svc_debug_prop:s0
+    ├── u:object_r:last_boot_reason_prop:s0
+    ├── u:object_r:llkd_prop:s0
+    ├── u:object_r:lmkd_prop:s0
+    ├── u:object_r:log_prop:s0
+    ├── u:object_r:log_tag_prop:s0
+    ├── u:object_r:logd_prop:s0
+    ├── u:object_r:logpersistd_logging_prop:s0
+    ├── u:object_r:lowpan_prop:s0
+    ├── u:object_r:lpdumpd_prop:s0
+    ├── u:object_r:media_variant_prop:s0
+    ├── u:object_r:mmc_prop:s0
+    ├── u:object_r:mock_ota_prop:s0
+    ├── u:object_r:module_sdkextensions_prop:s0
+    ├── u:object_r:net_dns_prop:s0
+    ├── u:object_r:net_radio_prop:s0
+    ├── u:object_r:netd_stable_secret_prop:s0
+    ├── u:object_r:nfc_prop:s0
+    ├── u:object_r:nnapi_ext_deny_product_prop:s0
+    ├── u:object_r:ota_prop:s0
+    ├── u:object_r:overlay_prop:s0
+    ├── u:object_r:pan_result_prop:s0
+    ├── u:object_r:persist_debug_prop:s0
+    ├── u:object_r:persistent_properties_ready_prop:s0
+    ├── u:object_r:pm_prop:s0
+    ├── u:object_r:powerctl_prop:s0
+    ├── u:object_r:radio_prop:s0
+    ├── u:object_r:rebootescrow_hal_prop:s0
+    ├── u:object_r:restorecon_prop:s0
+    ├── u:object_r:safemode_prop:s0
+    ├── u:object_r:serialno_prop:s0
+    ├── u:object_r:shell_prop:s0
+    ├── u:object_r:socket_hook_prop:s0
+    ├── u:object_r:storage_config_prop:s0
+    ├── u:object_r:surfaceflinger_display_prop:s0
+    ├── u:object_r:system_adbd_prop:s0
+    ├── u:object_r:system_boot_reason_prop:s0
+    ├── u:object_r:system_jvmti_agent_prop:s0
+    ├── u:object_r:system_lmk_prop:s0
+    ├── u:object_r:system_prop:s0
+    ├── u:object_r:system_radio_prop:s0
+    ├── u:object_r:system_trace_prop:s0
+    ├── u:object_r:test_boot_reason_prop:s0
+    ├── u:object_r:test_harness_prop:s0
+    ├── u:object_r:theme_prop:s0
+    ├── u:object_r:time_prop:s0
+    ├── u:object_r:traced_enabled_prop:s0
+    ├── u:object_r:traced_lazy_prop:s0
+    ├── u:object_r:traced_perf_enabled_prop:s0
+    ├── u:object_r:use_memfd_prop:s0
+    ├── u:object_r:userspace_reboot_config_prop:s0
+    ├── u:object_r:userspace_reboot_exported_prop:s0
+    ├── u:object_r:userspace_reboot_log_prop:s0
+    ├── u:object_r:userspace_reboot_test_prop:s0
+    ├── u:object_r:vehicle_hal_prop:s0
+    ├── u:object_r:vendor_audio_prop:s0
+    ├── u:object_r:vendor_awdisplayoutput_prop:s0
+    ├── u:object_r:vendor_camera_prop:s0
+    ├── u:object_r:vendor_default_prop:s0
+    ├── u:object_r:vendor_ril_prop:s0
+    ├── u:object_r:vendor_security_patch_level_prop:s0
+    ├── u:object_r:vendor_socket_hook_prop:s0
+    ├── u:object_r:vendor_thermal_prop:s0
+    ├── u:object_r:vendor_tv_prop:s0
+    ├── u:object_r:vendor_wireless_prop:s0
+    ├── u:object_r:virtual_ab_prop:s0
+    ├── u:object_r:vndk_prop:s0
+    ├── u:object_r:vold_prop:s0
+    ├── u:object_r:wifi_log_prop:s0
+    ├── u:object_r:wifi_prop:s0
+  ├── ashmem
+  ├── ashmema8476e97-65db-435a-906f-a0915b3cd94a
+  ├── binder
+  ├── binderfs/ (drwxr-xr-x)
+    ├── binder
+    ├── binder-control
+    ├── binder_logs/ (drwxr-xr-x)
+      ├── failed_transaction_log
+      ├── proc/ (drwxr-xr-x)
+        ├── 13895
+        ├── 2190
+        ├── 2191
+        ├── 2192
+        ├── 2200
+        ├── 2293
+        ├── 2294
+        ├── 2295
+        ├── 2297
+        ├── 2386
+        ├── 2387
+        ├── 2389
+        ├── 2390
+        ├── 2392
+        ├── 2393
+        ├── 2394
+        ├── 2395
+        ├── 2396
+        ├── 2399
+        ├── 2400
+        ├── 2401
+        ├── 2402
+        ├── 2403
+        ├── 2404
+        ├── 2405
+        ├── 2406
+        ├── 2407
+        ├── 2409
+        ├── 2411
+        ├── 2413
+        ├── 2493
+        ├── 2539
+        ├── 2544
+        ├── 2547
+        ├── 2548
+        ├── 2549
+        ├── 2550
+        ├── 2552
+        ├── 2553
+        ├── 2554
+        ├── 2556
+        ├── 2560
+        ├── 2561
+        ├── 2562
+        ├── 2563
+        ├── 2568
+        ├── 2571
+        ├── 2573
+        ├── 2628
+        ├── 2827
+        ├── 2950
+        ├── 3050
+        ├── 3076
+        ├── 3135
+        ├── 3456
+        ├── 3476
+        ├── 3496
+        ├── 3548
+        ├── 3579
+        ├── 3828
+        ├── 3921
+        ├── 3977
+        ├── 4002
+        ├── 4037
+        ├── 4073
+        ├── 4109
+        ├── 4153
+        ├── 4302
+        ├── 4354
+        ├── 4506
+        ├── 6420
+        ├── 6742
+        ├── 7360
+        ├── 8967
+      ├── state
+      ├── stats
+      ├── transaction_log
+      ├── transactions
+    ├── hwbinder
+    ├── vndbinder
+  ├── blkio/ (drwxr-xr-x)
+    ├── background/ (drwxr-xr-x)
+      ├── blkio.group_idle
+      ├── blkio.weight
+      ├── tasks
+    ├── blkio.group_idle
+    ├── blkio.weight
+  ├── block/ (drwxr-xr-x)
+    ├── by-name/ (drwxr-xr-x)
+      ├── Reserve0_a
+      ├── Reserve0_b
+      ├── UDISK
+      ├── boot_a
+      ├── boot_b
+      ├── bootloader_a
+      ├── bootloader_b
+      ├── dtbo_a
+      ├── dtbo_b
+      ├── empty
+      ├── env_a
+      ├── env_b
+      ├── frp
+      ├── media_data
+      ├── metadata
+      ├── misc
+      ├── mmcblk0
+      ├── private
+      ├── super
+      ├── userdata
+      ├── vbmeta_a
+      ├── vbmeta_b
+      ├── vbmeta_system_a
+      ├── vbmeta_system_b
+      ├── vbmeta_vendor_a
+      ├── vbmeta_vendor_b
+      ├── vendor_boot_a
+      ├── vendor_boot_b
+    ├── dm-0
+    ├── dm-1
+    ├── dm-2
+    ├── loop0
+    ├── loop1
+    ├── loop2
+    ├── loop3
+    ├── loop4
+    ├── loop5
+    ├── loop6
+    ├── loop7
+    ├── mapper/ (drwxr-xr-x)
+      ├── by-uuid/ (drwxr-xr-x)
+        ├── 11919920-28ba-49c1-b75d-b325fec73e3f
+        ├── b762ee34-1852-4109-9294-9d51209024c3
+        ├── ff7dc0d1-2826-4b0b-9458-ee0b02ae56bd
+      ├── product_a
+      ├── system_a
+      ├── vendor_a
+    ├── mmcblk0
+    ├── mmcblk0p1
+    ├── mmcblk0p10
+    ├── mmcblk0p11
+    ├── mmcblk0p12
+    ├── mmcblk0p13
+    ├── mmcblk0p14
+    ├── mmcblk0p15
+    ├── mmcblk0p16
+    ├── mmcblk0p17
+    ├── mmcblk0p18
+    ├── mmcblk0p19
+    ├── mmcblk0p2
+    ├── mmcblk0p20
+    ├── mmcblk0p21
+    ├── mmcblk0p22
+    ├── mmcblk0p23
+    ├── mmcblk0p24
+    ├── mmcblk0p25
+    ├── mmcblk0p26
+    ├── mmcblk0p3
+    ├── mmcblk0p4
+    ├── mmcblk0p5
+    ├── mmcblk0p6
+    ├── mmcblk0p7
+    ├── mmcblk0p8
+    ├── mmcblk0p9
+    ├── platform/ (drwxr-xr-x)
+      ├── soc@2900000/ (drwxr-xr-x)
+        ├── 4022000.sdmmc/ (drwxr-xr-x)
+          ├── by-name/ (drwxr-xr-x)
+            ├── Reserve0_a
+            ├── Reserve0_b
+            ├── UDISK
+            ├── boot_a
+            ├── boot_b
+            ├── bootloader_a
+            ├── bootloader_b
+            ├── dtbo_a
+            ├── dtbo_b
+            ├── empty
+            ├── env_a
+            ├── env_b
+            ├── frp
+            ├── media_data
+            ├── metadata
+            ├── misc
+            ├── private
+            ├── super
+            ├── userdata
+            ├── vbmeta_a
+            ├── vbmeta_b
+            ├── vbmeta_system_a
+            ├── vbmeta_system_b
+            ├── vbmeta_vendor_a
+            ├── vbmeta_vendor_b
+            ├── vendor_boot_a
+            ├── vendor_boot_b
+          ├── mmcblk0
+          ├── mmcblk0p1
+          ├── mmcblk0p10
+          ├── mmcblk0p11
+          ├── mmcblk0p12
+          ├── mmcblk0p13
+          ├── mmcblk0p14
+          ├── mmcblk0p15
+          ├── mmcblk0p16
+          ├── mmcblk0p17
+          ├── mmcblk0p18
+          ├── mmcblk0p19
+          ├── mmcblk0p2
+          ├── mmcblk0p20
+          ├── mmcblk0p21
+          ├── mmcblk0p22
+          ├── mmcblk0p23
+          ├── mmcblk0p24
+          ├── mmcblk0p25
+          ├── mmcblk0p26
+          ├── mmcblk0p3
+          ├── mmcblk0p4
+          ├── mmcblk0p5
+          ├── mmcblk0p6
+          ├── mmcblk0p7
+          ├── mmcblk0p8
+          ├── mmcblk0p9
+    ├── ram0
+    ├── ram1
+    ├── ram10
+    ├── ram11
+    ├── ram12
+    ├── ram13
+    ├── ram14
+    ├── ram15
+    ├── ram2
+    ├── ram3
+    ├── ram4
+    ├── ram5
+    ├── ram6
+    ├── ram7
+    ├── ram8
+    ├── ram9
+    ├── vold/ (drwx------)
+    ├── zram0
+  ├── boringssl/ (drwxr-xr-x)
+    ├── selftest/ (drwxr-xr-x)
+      ├── dd4c470dd23f488fcf7cc3551ed9327bdd5ec2cf8a7eb4f3f9c780e0c68fde64
+  ├── bus/ (drwxr-xr-x)
+    ├── usb/ (drwxr-xr-x)
+      ├── 001/ (drwxr-xr-x)
+        ├── 001
+      ├── 002/ (drwxr-xr-x)
+        ├── 001
+      ├── 003/ (drwxr-xr-x)
+        ├── 001
+      ├── 004/ (drwxr-xr-x)
+        ├── 001
+  ├── cedar_dev
+  ├── cedar_go
+  ├── cg2_bpf/ (drw-------)
+    ├── cgroup.controllers
+    ├── cgroup.max.depth
+    ├── cgroup.max.descendants
+    ├── cgroup.procs
+    ├── cgroup.stat
+    ├── cgroup.subtree_control
+    ├── cgroup.threads
+    ├── cpu.pressure
+    ├── io.pressure
+    ├── memory.pressure
+  ├── cgroup_info/ (drwx--x--x)
+    ├── cgroup.rc
+  ├── com.koushikdutta.superuser.daemon/ (drwxr-xr-x)
+    ├── server
+  ├── console
+  ├── cpu_comm
+  ├── cpu_dma_latency
+  ├── cpu_variant:arm
+  ├── cpuctl/ (dr-xr-xr-x)
+    ├── cgroup.clone_children
+    ├── cgroup.procs
+    ├── cgroup.sane_behavior
+    ├── cpu.shares
+    ├── notify_on_release
+    ├── release_agent
+    ├── tasks
+  ├── cpuset/ (drwxr-xr-x)
+    ├── background/ (drwxr-xr-x)
+    ├── foreground/ (drwxr-xr-x)
+      ├── tasks
+    ├── restricted/ (drwxr-xr-x)
+    ├── system-background/ (drwxrwxr-x)
+      ├── tasks
+    ├── top-app/ (drwxr-xr-x)
+  ├── decd
+  ├── demux
+  ├── device-mapper
+  ├── dtmbip
+  ├── event-log-tags
+  ├── fd
+  ├── freezer/ (dr-xr-xr-x)
+    ├── cgroup.clone_children
+    ├── cgroup.procs
+    ├── cgroup.sane_behavior
+    ├── frozen/ (drwxr-xr-x)
+      ├── cgroup.clone_children
+      ├── cgroup.procs
+      ├── freezer.parent_freezing
+      ├── freezer.self_freezing
+      ├── freezer.state
+      ├── notify_on_release
+      ├── tasks
+    ├── notify_on_release
+    ├── release_agent
+    ├── tasks
+  ├── fscklogs/ (drwxrwx---)
+  ├── full
+  ├── fuse
+  ├── ge2d
+  ├── gpiochip0
+  ├── gpiochip1
+  ├── graphics/ (drwxr-xr-x)
+    ├── fb0
+    ├── fb1
+  ├── hidraw0
+  ├── hidtvreg
+  ├── hw_random
+  ├── hwbinder
+  ├── hwmon0
+  ├── i2c-1
+  ├── input/ (drwxr-xr-x)
+    ├── event0
+    ├── event1
+    ├── event10
+    ├── event2
+    ├── event3
+    ├── event4
+    ├── event5
+    ├── event6
+    ├── event7
+    ├── event8
+    ├── event9
+  ├── ion
+  ├── kmsg
+  ├── loop-control
+  ├── mali0
+  ├── mcu_comm
+  ├── memcg/ (dr-xr-xr-x)
+    ├── apps/ (drwxr-xr-x)
+      ├── cgroup.clone_children
+      ├── cgroup.event_control
+      ├── cgroup.procs
+      ├── memory.failcnt
+      ├── memory.force_empty
+      ├── memory.kmem.failcnt
+      ├── memory.kmem.limit_in_bytes
+      ├── memory.kmem.max_usage_in_bytes
+      ├── memory.kmem.tcp.failcnt
+      ├── memory.kmem.tcp.limit_in_bytes
+      ├── memory.kmem.tcp.max_usage_in_bytes
+      ├── memory.kmem.tcp.usage_in_bytes
+      ├── memory.kmem.usage_in_bytes
+      ├── memory.limit_in_bytes
+      ├── memory.max_usage_in_bytes
+      ├── memory.memsw.failcnt
+      ├── memory.memsw.limit_in_bytes
+      ├── memory.memsw.max_usage_in_bytes
+      ├── memory.memsw.usage_in_bytes
+      ├── memory.move_charge_at_immigrate
+      ├── memory.oom_control
+      ├── memory.pressure_level
+      ├── memory.soft_limit_in_bytes
+      ├── memory.stat
+      ├── memory.swappiness
+      ├── memory.usage_in_bytes
+      ├── memory.use_hierarchy
+      ├── notify_on_release
+      ├── tasks
+    ├── cgroup.clone_children
+    ├── cgroup.event_control
+    ├── cgroup.procs
+    ├── cgroup.sane_behavior
+    ├── memory.failcnt
+    ├── memory.force_empty
+    ├── memory.kmem.failcnt
+    ├── memory.kmem.limit_in_bytes
+    ├── memory.kmem.max_usage_in_bytes
+    ├── memory.kmem.tcp.failcnt
+    ├── memory.kmem.tcp.limit_in_bytes
+    ├── memory.kmem.tcp.max_usage_in_bytes
+    ├── memory.kmem.tcp.usage_in_bytes
+    ├── memory.kmem.usage_in_bytes
+    ├── memory.limit_in_bytes
+    ├── memory.max_usage_in_bytes
+    ├── memory.memsw.failcnt
+    ├── memory.memsw.limit_in_bytes
+    ├── memory.memsw.max_usage_in_bytes
+    ├── memory.memsw.usage_in_bytes
+    ├── memory.move_charge_at_immigrate
+    ├── memory.oom_control
+    ├── memory.pressure_level
+    ├── memory.soft_limit_in_bytes
+    ├── memory.stat
+    ├── memory.swappiness
+    ├── memory.usage_in_bytes
+    ├── memory.use_hierarchy
+    ├── notify_on_release
+    ├── release_agent
+    ├── system/ (dr-xr-x---)
+      ├── cgroup.clone_children
+      ├── cgroup.event_control
+      ├── cgroup.procs
+      ├── memory.failcnt
+      ├── memory.force_empty
+      ├── memory.kmem.failcnt
+      ├── memory.kmem.limit_in_bytes
+      ├── memory.kmem.max_usage_in_bytes
+      ├── memory.kmem.tcp.failcnt
+      ├── memory.kmem.tcp.limit_in_bytes
+      ├── memory.kmem.tcp.max_usage_in_bytes
+      ├── memory.kmem.tcp.usage_in_bytes
+      ├── memory.kmem.usage_in_bytes
+      ├── memory.limit_in_bytes
+      ├── memory.max_usage_in_bytes
+      ├── memory.memsw.failcnt
+      ├── memory.memsw.limit_in_bytes
+      ├── memory.memsw.max_usage_in_bytes
+      ├── memory.memsw.usage_in_bytes
+      ├── memory.move_charge_at_immigrate
+      ├── memory.oom_control
+      ├── memory.pressure_level
+      ├── memory.soft_limit_in_bytes
+      ├── memory.stat
+      ├── memory.swappiness
+      ├── memory.usage_in_bytes
+      ├── memory.use_hierarchy
+      ├── notify_on_release
+      ├── tasks
+    ├── tasks
+  ├── mipsloader
+  ├── mmcblk0rpmb
+  ├── net/ (drwxr-xr-x)
+    ├── tun
+  ├── nsi
+  ├── null
+  ├── ppp
+  ├── ptmx
+  ├── pts/ (drwxr-xr-x)
+    ├── 0
+    ├── 1
+    ├── 2
+    ├── ptmx
+  ├── random
+  ├── rfkill
+  ├── rtc0
+  ├── sid_efuse
+  ├── snd/ (drwxr-xr-x)
+    ├── controlC0
+    ├── controlC1
+    ├── controlC2
+    ├── controlC3
+    ├── controlC4
+    ├── pcmC0D0c
+    ├── pcmC0D0p
+    ├── pcmC1D0c
+    ├── pcmC1D0p
+    ├── pcmC2D0c
+    ├── pcmC2D0p
+    ├── pcmC3D0c
+    ├── pcmC3D0p
+    ├── pcmC4D0c
+    ├── pcmC4D0p
+    ├── pcmC4D1c
+    ├── pcmC4D1p
+    ├── pcmC4D2p
+    ├── pcmC4D3p
+    ├── timer
+  ├── socket/ (drwxr-xr-x)
+    ├── adbd
+    ├── audioserver/ (drwxrwxr-x)
+    ├── dnsproxyd
+    ├── fwmarkd
+    ├── lmkd
+    ├── logd
+    ├── logdr
+    ├── logdw
+    ├── mdns
+    ├── mdnsd
+    ├── property_service
+    ├── statsdw
+    ├── tombstoned_crash
+    ├── tombstoned_intercept
+    ├── tombstoned_java_trace
+    ├── usap_pool_primary
+    ├── wpa_wlan0
+    ├── zygote
+  ├── stderr
+  ├── stdin
+  ├── stdout
+  ├── stune/ (drwxr-xr-x)
+    ├── background/ (drwxr-xr-x)
+    ├── foreground/ (drwxr-xr-x)
+    ├── nnapi-hal/ (drwxr-xr-x)
+      ├── schedtune.boost
+      ├── schedtune.prefer_idle
+    ├── rt/ (drwxr-xr-x)
+    ├── top-app/ (drwxr-xr-x)
+  ├── sunxi-reg
+  ├── sunxi-wlan
+  ├── sunxi_drm_heap
+  ├── sunxi_memremap
+  ├── sunxi_pwm0
+  ├── sunxi_smc
+  ├── sunxi_soc_info
+  ├── tee0
+  ├── teepriv0
+  ├── trid_audio
+  ├── tty
+  ├── ttyS0
+  ├── ttyS1
+  ├── tun
+  ├── uhid
+  ├── uinput
+  ├── urandom
+  ├── usb-ffs/ (drwxrwxr-x)
+    ├── adb/ (dr-x------)
+      ├── ep0
+      ├── ep1
+      ├── ep2
+    ├── mtp/ (dr-xr-x---)
+      ├── ep0
+      ├── ep1
+      ├── ep2
+      ├── ep3
+    ├── ptp/ (dr-xr-x---)
+      ├── ep0
+      ├── ep1
+      ├── ep2
+      ├── ep3
+  ├── usb_accessory
+  ├── vndbinder
+  ├── watchdog
+  ├── watchdog0
+  ├── zero
+```
+
+---
+

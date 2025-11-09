@@ -56,7 +56,7 @@ modules.order
 backup_*.img
 emmc_backup.img
 nand_backup.img
-
+full_emmc_dump_clean_root.img
 # Temporary files
 *.tmp
 *.temp
@@ -144,3 +144,7 @@ u-boot-sunxi-with-spl*.bin
 
 # udev rules (system-specific)
 90-sunxi-fel.rules
+
+
+# sensible files
+clustering_possibility.md
